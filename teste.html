@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Roupas GK</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #3498db;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #fff;
+            margin: 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid #3498db;
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, border 0.3s;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #fff;
+            color: #3498db;
+        }
+
+        img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        .images-container {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sobre Nós</h1>
+</header>
+
+<div class="images-container">
+    <img src="kauecurriculo.jfif" alt="Foto de Perfil - Kaue">
+    <img src="https://avatars.githubusercontent.com/u/144917586?v=4" alt="Foto de Perfil - Gustavo">
+</div>
+
+<button onclick="redirecionarLink(1)">Redirecionar para o currículo de Kaue</button>
+<button onclick="redirecionarLink(2)">Redirecionar para o currículo de Gustavo</button>
+
+<script>
+    function redirecionarLink(opcao) {
+        if (opcao === 1) {
+            window.location.href = 'curriculokaue.html';
+        } else if (opcao === 2) {
+            window.location.href = 'curriculogus.html';
+        }
+    }
+</script>
+
+<p>Numa faculdade de Analise E Desenvolvimento De Sistemas, Kaue e Gustavo, dois amigos apaixonados por roupas e tecnologia, foram designados para criar um site como projeto final. Com um interesse mútuo em roupas e design, eles decidiram criar um site de venda online de roupas estilosas. Gustavo, entusiasta da moda streetwear, ficou responsável pelo design e pela curadoria do catálogo de roupas. Ele escolheu uma paleta de cores moderna e clean, garantindo que a experiência visual do usuário fosse agradável. Além disso, Kaue dedicou tempo para fotografar as peças de roupa, adicionando um toque pessoal ao site. Kauê, o desenvolvedor habilidoso, mergulhou na codificação do site. Ele utilizou tecnologias modernas para garantir que o site fosse responsivo e fácil de navegar. Implementou um sistema de carrinho de compras intuitivo e seguro, proporcionando uma experiência de compra online tranquila. Durante o processo, Kaue e Gustavo encontraram desafios técnicos e de design, mas trabalharam juntos para superá-los. Trocaram ideias, refinaram o site e, ao final, criaram algo que representava a fusão perfeita de moda e tecnologia. O site foi lançado e recebeu uma recepção calorosa. Amigos e colegas ficaram impressionados com a estética moderna e a facilidade de uso. Kaue e Gustavo não só obtiveram sucesso no projeto acadêmico, mas também perceberam o potencial de transformar sua paixão em algo maior. Ao longo do processo, Kaue e Gustavo não apenas construíram um site de venda de roupas, mas também fortaleceram sua amizade e descobriram novas perspectivas sobre como a moda e a tecnologia podem se complementar. Esse projeto não apenas os impulsionou academicamente, mas também os inspirou a explorar futuras colaborações.</p>
+
+<button onclick="redirecionarParaOutroSite()">Ir para Início da Loja</button>
+
+<script>
+    function redirecionarParaOutroSite() {
+        window.location.href = 'index.html';
+    }
+</script>
+</body>
+</html>
